@@ -1,11 +1,16 @@
-# config.py - Configuration with MongoDB support
+# config.py
 import os
 from dotenv import load_dotenv
 
-# Load environment variables
+# Load environment variables from .env file
 load_dotenv()
 
-BOT_TOKEN = os.getenv("6007398311:AAF1s-_khhR6fQmJRRPdU0DsDaSvhEP9TH8")  # From @BotFather
-TMDB_API_KEY = os.getenv("http://www.omdbapi.com/?i=tt3896198&apikey=a956c290")  # From themoviedb.org
-ADMIN_ID = int(os.getenv("1960614875"))  # Your Telegram user ID
-MONGO_URI = os.getenv("mongodb+srv://sidharthwork143:fn6HFQ2ErnAT7ggT@cluster0.umwqqcl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # mongodb://localhost:27017 or Atlas URI
+# Get config values
+BOT_TOKEN = os.getenv("BOT_TOKEN")  # Your bot token from BotFather
+TMDB_API_KEY = os.getenv("TMDB_API_KEY")  # Your TMDB API key
+ADMIN_ID = int(os.getenv('ADMIN_ID'))  # Your Telegram user ID
+MONGO_URI = os.getenv("MONGO_URI")  # Your MongoDB URI
+
+# Debugging: Print values to ensure they are loaded correctly
+print("BOT_TOKEN:", BOT_TOKEN)  # Remove this line after debugging
+print("ADMIN_ID:", ADMIN_ID)  # Remove this line after debugging
