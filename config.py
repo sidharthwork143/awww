@@ -8,4 +8,4 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")  # From @BotFather
 TMDB_API_KEY = os.getenv("TMDB_API_KEY")  # From themoviedb.org
 ADMIN_ID = int(os.getenv("ADMIN_ID"))  # Your Telegram user ID
-MONGO_URI = os.getenv("MONGO_URI")  # mongodb://localhost:27017 or Atlas URI
+MONGO_URI = os.getenv("mongodb+srv://sidharthwork143:fn6HFQ2ErnAT7ggT@cluster0.umwqqcl.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")  # mongodb://localhost:27017 or Atlas URI
